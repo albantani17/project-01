@@ -15,6 +15,13 @@
         .navbar a{
             color: #fff;
         }
+        .navbar-toggler{
+          border: none !important;
+          outline: none !important;
+        }
+        .navbar-toggler:focus{
+          box-shadow: none !important;
+        }
         .fa-bars {
             color: white;
         }
@@ -32,11 +39,6 @@
         }
         .custom-container{
             display: flex;
-        }   
-        button:focus{
-            outline: none;
-            box-shadow: none;
-            border: none;
         }
         .dropdown-menu li a:hover{
             background-color: #ba9ffb;
@@ -48,7 +50,7 @@
         <div class="container-fluid d-flex justify-content-start">
             <a href="#" class="navbar-brand  text-light order-1 order-lg-2 mx-3"><b>HARA</b></a>
             <button class="navbar-toggler order-lg-1" style="outline: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fas fa-bars"></span>
+                <span class="fas fa-bars "></span>
             </button>
             <div class="collapse navbar-collapse text-light order-3" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: white;">
@@ -56,21 +58,22 @@
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Movie</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Series</a>
+                    <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                      Genre
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Horror</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                      <li><a class="dropdown-item" href="#">Comedy</a></li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
